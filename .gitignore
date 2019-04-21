@@ -2,3 +2,5 @@ test/
 vendor
 .envrc
 example/
+Gopkg*
+redmine
