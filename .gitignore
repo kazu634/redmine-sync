@@ -2,3 +2,4 @@ test/
 vendor
 .envrc
 example/
+Gopkg*
