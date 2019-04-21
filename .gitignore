@@ -3,3 +3,4 @@ vendor
 .envrc
 example/
 Gopkg*
+redmine
