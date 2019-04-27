@@ -14,8 +14,8 @@ import (
 )
 
 type Eml struct {
-	Filename string // ファイル名
-	SentDate time.Time // 送信日付
+	Filename string           // ファイル名
+	SentDate time.Time        // 送信日付
 	Contents *enmime.Envelope // メールファイルの中身
 }
 
