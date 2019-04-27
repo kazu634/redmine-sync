@@ -86,8 +86,11 @@ func RedmineMkdir(root string) {
 	// APIクライアントの作成
 	c := redmine.NewClient(conf.Endpoint, conf.Apikey)
 
+	// Issue検索条件を準備する
+	filter := &redmine.IssueFilter{ProjectId: strconv.Itoa(conf.Project)}
+
 	// Issue一覧の取得
-	issues, err := c.IssuesByFilter(nil)
+	issues, err := c.IssuesByFilter(filter)
 	if err != nil {
 		log.Fatalf("Failed to list issues: %s\n", err)
 	}
