@@ -25,7 +25,7 @@ func convDate(dateStr string) time.Time {
 	t, err := time.Parse(layout, dateStr)
 	if err != nil {
 		layout := "Mon, 2 Jan 2006 15:04:05 -0700"
-		t, err := time.Parse(layout, dateStr)
+		t, err = time.Parse(layout, dateStr)
 
 		if err != nil {
 			panic(err)
